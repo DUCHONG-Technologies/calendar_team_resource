@@ -1,16 +1,50 @@
-# calendar_team_resurce
+# Calendar Horizontal Resource
 
-Calendar Horizontal Resource
+![flutter_version][flutter_badge]
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
+[![License: MIT][license_badge]][license_link]
 
-## Getting Started
+A package calendar making by DUC HONG Technologies.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+# Preview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot](assets/preview.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Install
+
+Then import it to your project:
+
+`import 'package:calendar_resource/calendar.dart';`
+
+# Usage Calendar Widget
+
+Add CalendarBloc:
+
+```
+    BlocProvider(
+       create: (_) => CalendarBloc(),
+       child: ...
+    )
+```
+
+Use Calendar Widget:
+
+```
+    Calendar(
+        theme: CalendarTheme.light(
+            todayHighlightColor: Theme.of(context).primaryColor,
+        ),
+    )
+```
+
+[flutter_badge]: https://img.shields.io/badge/flutter-v3.0.5-blue
+
+[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
+
+[license_link]: https://opensource.org/licenses/MIT
+
+[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+
+[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
